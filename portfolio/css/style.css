@@ -1,5 +1,13 @@
 /* General styling */
  
+@font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
 
 html, body {
     height: 100%; /* Ensure the background covers the full height */
@@ -42,12 +50,33 @@ html, body {
 }
 
 .hero-title {
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f9f4;
+    font-variation-settings: "wght" 900 "ital" 1;
+    font-size: 5rem;
+    text-align: center;
+    color: transparent;
+    font-family: "Meta" Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 10px 10px 0px #07bccc, 
+    15px 15px 0px #e601c0,
+    20px 20px 0px #e9019a,
+    25px 25px 0px #f40468,
+    45px 45px 10px #482896;
+    cursor: pointer;
+
+}
+
+.hero-title:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+}
+/*.hero-title {
     font-style: italic;
     font-size: 3rem;
     font-weight: bold rgba#bad8fd;
     margin-bottom: 20px;
 }
-
+*/
 h1 {
     font-family: 'Protest Guerrilla', sans-serif;
     font-size: 3rem; /* Adjust the size as needed */
@@ -69,7 +98,7 @@ h1 {
 }
 
 .hero-image {
-    max-width: 200px;
+    max-width: 300px;
     border-radius: 50%;
 }
 
