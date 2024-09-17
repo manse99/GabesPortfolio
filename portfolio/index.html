@@ -11,11 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <!-- Javascript -->
+     <script src="./js/aboutMe.js"></script>
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-info-subtle border border-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info-subtle border border-light shadow p-1 mb-2 bg-white rounded">
         <div class="container">
             <a class="navbar-brand" href="#">Gabriel's Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#about">About Me</a>
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -47,7 +49,7 @@
     </header>
 
     <!-- About Me Section -->
-    <section id="about" class="about-section py-5">
+    <section id="about" class="about-section py-5 hidden">
         <div class="container">
             <h2 class="section-title text-center">About Me</h2>
             <p class="about-text text-center">Hello! I'm Gabriel, a Full Stack Developer with a background in UX design and data science. I have a passion for creating user-centered applications and solving challenging problems through code. I'm also a US Army infantry veteran with experience in electronics engineering and project management.</p>
@@ -88,6 +90,10 @@
     <!-- Footer -->
     <footer class="footer py-3 text-center">
         <div class="container">
+            <address>
+                <a href="mailto:jim@example.com">manse99@gmail.com</a><br />
+                <a href="tel:+14155550132">+1 (332) 235-7915</a>
+            </address>
             <p>&copy; 2024 Gabriel M. Cohen. All rights reserved.</p>
         </div>
     </footer>
