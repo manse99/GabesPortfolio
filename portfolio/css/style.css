@@ -1,20 +1,51 @@
 /* General styling */
  
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
+html, body {
+    height: 100%; /* Ensure the background covers the full height */
+    margin: 0;
+    padding: 0;
+    background-image: url('../image/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed as you scroll */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
+.navbar {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #bad8fd; /* Make the navbar slightly transparent */
+    z-index: 1000; /* Ensures it stays above the background */
+}
+
+.nav-link .box{
+    border: 2px solid #000; /* Black border around the links */
+    border-radius: 5px; /* Optional: Rounds the corners of the border */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px 10px; /* Adds padding inside the links */
+    margin: 0 5px; /* Adds horizontal space between the links */
+    text-decoration: none; /* Removes the underline */
+    color: #000; /* Ensures the link text is black */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Adds a background color on hover or when active */
+    color: #000; /* Keeps the text color black on hover or when active */
+}
+
+
 .hero-section {
-    background-color: #f8f9fa;
+    background-color: #bad8fd;
     padding: 100px 0;
 }
 
 .hero-title {
     font-style: italic;
     font-size: 3rem;
-    font-weight: bold rgba#3b3f5d;
+    font-weight: bold rgba#bad8fd;
     margin-bottom: 20px;
 }
 
@@ -30,11 +61,12 @@ h1 {
 }
 
 .hero-subtitle {
+    padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    background: #f0f0f0;
-    box-shadow: #3b3f5d;
+    background: #bad8fd;
+    box-shadow: #030833;
 }
 
 .hero-image {
@@ -44,7 +76,7 @@ h1 {
 
 /* About Section */
 .about-section {
-    background-color: #fff;
+    background-color: #bad8fd;
     padding: 60px 0;
 }
 
@@ -56,6 +88,7 @@ h1 {
 
 .about-text {
     font-size: 1.2rem;
+    background-color: azure;
 }
 
 /* Projects Section */
@@ -70,7 +103,9 @@ h1 {
 
 /* Footer */
 .footer {
-    background-color: #333;
-    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #f1e2e2;
+    color: #023d28;
     padding: 20px 0;
 }
