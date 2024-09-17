@@ -24,10 +24,17 @@ h1 {
     font-weight: bold;
 }
 
+.project-card img {
+    height: 50px;
+    width: 50px;
+}
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
     margin-bottom: 40px;
+    background: #f0f0f0;
+    box-shadow: #3b3f5d;
 }
 
 .hero-image {
