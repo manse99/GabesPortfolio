@@ -1,3 +1,4 @@
+![fitness-app2](https://github.com/user-attachments/assets/c49eac95-df4c-49e3-843f-cd3a9a82be75)
 Portfolio Repository
 Welcome to my personal portfolio repository! This repository serves as a showcase of my secondary projects and provides information about me.
 
